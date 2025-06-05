@@ -1,0 +1,30 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# generated chache
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# generated reports
+.reports/
+
+# personal files and developer notes
+.github/instructions/
+.github/prompts/
+.sample_data/
+
+
+# spesifik stream_lit
+.streamlit/
+
+# VS Code settings
+.vscode/
