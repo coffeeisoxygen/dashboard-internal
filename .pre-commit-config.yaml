@@ -87,7 +87,7 @@ repos:
   # 4. UV (Dependency Management)
   # ========================================
   - repo: https://github.com/astral-sh/uv-pre-commit
-    rev: 0.7.10
+    rev: 0.7.11
     hooks:
       # Update lockfile when deps change
       - id: uv-lock
@@ -154,12 +154,21 @@ default_stages: [pre-commit]
 fail_fast: true
 
 # Exclude patterns
+
 exclude: |
   (?x)^(
     src/dashboard/_version\.py|
     \.venv/.*|
+    \.uv/.*|
+    \.env/.*|
+    env/.*|
+    venv/.*|
     \.reports/.*|
     dist/.*|
     build/.*|
-    .*\.egg-info/.*
+    .*\.egg-info/.*|
+    \.ipynb_checkpoints/.*|
+    \.idea/.*|
+    \.vscode/.*|
+    \.streamlit/secrets\.toml
   )$
